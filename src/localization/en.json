@@ -1,0 +1,88 @@
+{
+  "account": {
+    "btn_sign_in": "SIGN IN",
+    "btn_sign_out": "SIGN OUT",
+    "section_fan_cmt": "FAN-FRIENDLY COMMENTS",
+    "section_notif": "ON FIRE NOTIFICATIONS",
+    "section_social": "SOCIAL",
+    "title_follow_chtv": "FOLLOW CHEESEHEAD TV!",
+    "title_support_chtv": "SUPPORT OUR EFFORTS"
+  },
+  "comments": {
+    "hide_all": "hide all",
+    "post_comment": "SUBMIT COMMENT",
+    "reply": "REPLY",
+    "show_all": "show all"
+  },
+  "common": {
+    "btn_cancel": "Cancel",
+    "btn_comment": "LEAVE A COMMENT",
+    "btn_comments": "COMMENTS",
+    "btn_log_out": "LOG OUT",
+    "btn_try_again": "Try again",
+    "btn_update": "Update",
+    "sub_success": "Subscription added",
+    "sub_to_youtube_channel": "SUBSCRIBE TO CHTV!",
+    "text_comment": "COMMENTS",
+    "text_go_back": "< BACK",
+    "text_search_country_mobile": "Type Here...",
+    "text_share": "SHARE",
+    "text_show_all": "Show all",
+    "text_unconnected_content": "Please check your internet connection and try again",
+    "text_unconnected_title": "No Internet Connection",
+    "text_update_content": "System optimization, faster, more convenient",
+    "text_update_title": "News updates",
+    "title_update_version": "New version available!",
+    "text_description_update": "Please update the app to latest version to have the best experience."
+  },
+  "mainStack": {
+    "tab_news": "NEWS",
+    "tab_podcast": "PODCAST",
+    "tab_schedule": "SCHEDULE",
+    "tab_shop": "SHOP",
+    "tab_video": "VIDEO",
+    "text_packer_world": "PACKER \nWORLD"
+  },
+  "podcast": {
+    "header_title": "PODCAST",
+    "title_latest": "LATEST",
+    "title_shows": "SHOWS"
+  },
+  "reset_password": {
+    "email_or_username": "Email or Username",
+    "send_password_reset_link": "SEND PASSWORD RESET LINK",
+    "title": "PASSWORD RESET"
+  },
+  "schedule": {
+    "text_bye_week": "BYE WEEK",
+    "title_pre_season": "PRE SEASON",
+    "title_reg_season": "REGULAR SEASON"
+  },
+  "sign_in": {
+    "new_user": "NEW USER?",
+    "password": "Password",
+    "reset_password": "Reset password",
+    "sign_in": "SIGN IN",
+    "sign_up": "SIGN UP",
+    "title": "SIGN IN OR SIGN UP TO COMMENT",
+    "username": "Email or Username"
+  },
+  "sign_up": {
+    "email": "Email address",
+    "email_description": "Valid email required to recieve temporary PW.",
+    "sign_up": "SIGN UP",
+    "terms": "Terms",
+    "timezone": "Select Timezone",
+    "title": "SIGN UP",
+    "username": "Username",
+    "username_description": "No spaces or special characters allowed.\nLetters, numbers, dashes and underscores are  OK."
+  },
+  "stack": {
+    "settings_stack": "SETTINGS",
+    "sign_in_stack": "SIGN IN OR SIGN UP TO COMMENT",
+    "post_comment": "POST COMMENT"
+  }, 
+  "errors" : {
+    "text_ticket_link_available": "Ticket link is not available"
+  }
+}
