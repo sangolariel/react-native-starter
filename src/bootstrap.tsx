@@ -20,7 +20,6 @@ import FlashMessage from 'react-native-flash-message';
 
 /* Theme */
 import {
-  configureFonts,
   DefaultTheme,
   Provider as PaperProvider,
   Provider as ThemeProvider,
@@ -28,8 +27,8 @@ import {
 import {useColorScheme} from 'react-native-appearance';
 import {colors, fonts, spacing, dimension, shadow} from '~/theme';
 
-// /* Router @react-navigation v5 */
-// import RootNavigator from '~/router';
+// /* Router @react-navigation v6 */
+import RootNavigator from '~/navigation';
 
 /* Untils */
 // import {setAuthorizationToken, setUserAgent} from '~/utils/api';
@@ -114,8 +113,6 @@ export default () => {
   themeConfig.spacing = {...spacing};
   themeConfig.dimension = {...dimension};
   themeConfig.shadow = {...shadow};
-  /*Config font*/
-  themeConfig.fonts = configureFonts(fontConfig);
 
   if (stateCurrent.loaded) {
     /*Hide splash screen*/
@@ -132,9 +129,7 @@ export default () => {
       />
       <PreferencesContext.Provider value={preferences}>
         <PaperProvider theme={themeConfig}>
-          <PlayerContextProvider>
-            <RootNavigator />
-          </PlayerContextProvider>
+          <RootNavigator />
         </PaperProvider>
       </PreferencesContext.Provider>
       <FlashMessage position="top" />

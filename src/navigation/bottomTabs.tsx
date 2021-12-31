@@ -2,20 +2,16 @@ import React from 'react';
 import {Platform} from 'react-native';
 import {useTheme} from 'react-native-paper';
 import {useTranslation} from 'react-i18next';
-import {useSelector, useDispatch} from 'react-redux';
+import {useDispatch} from 'react-redux';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
-import {getActiveTab} from '~/store/temp/selectors';
-
-import * as tempActions from '~/store/temp/actions';
-
-import * as screens from '~/router/navigator/tab';
+import * as screens from '~/navigation/screens';
 
 import {tabsSetting, bottomTabs} from '~/configs/navigator';
 
-import * as TabsIcon from '~/theme/svg/bottomTab';
+import * as TabsIcon from '~/layout/svg/bottomTab';
 
-import {IObject} from '~/interfaces/common';
+import {IObject} from '~/types/common';
 
 const Tab = createBottomTabNavigator();
 const BottomTabs = () => {
@@ -26,16 +22,9 @@ const BottomTabs = () => {
   const lang: string = i18n.language;
   const backBehavior = 'initialRoute';
 
-  const activeTab = useSelector((state) => getActiveTab(state));
-
   const {initialRouteName} = tabsSetting.configs;
 
-  // const tabbarColor =
-  //   theme.darkMode && activeTab === bottomTabs.home
-  //     ? tabsSetting.configs.dark
-  //     : tabsSetting.configs.light;
-
-  const tabbarColor = tabsSetting.configs.light;
+  const tabbarColor = tabsSetting.configs;
 
   const {activeColor, inactiveColor, tabBarBackground} = tabbarColor;
 
@@ -49,12 +38,7 @@ const BottomTabs = () => {
       initialRouteName={initialRouteName}
       backBehavior={backBehavior}
       sceneContainerStyle={{
-        backgroundColor:
-          theme.darkMode && activeTab === bottomTabs.home
-            ? theme.colors.ads
-            : activeTab === bottomTabs.home
-            ? undefined
-            : theme.colors.bgColor,
+        backgroundColor: theme.colors.bgColor,
       }}
       tabBarOptions={{
         activeTintColor: activeColor,
