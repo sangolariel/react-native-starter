@@ -1,21 +1,19 @@
 import React from 'react';
-import {Platform} from 'react-native';
 import {useTheme} from 'react-native-paper';
 import {useTranslation} from 'react-i18next';
-import {useDispatch} from 'react-redux';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import * as screens from '~/navigation/screens';
 
-import {tabsSetting, bottomTabs} from '~/configs/navigator';
+import {tabsSetting} from '~/configs/navigator';
 
 import * as TabsIcon from '~/layout/svg/bottomTab';
 
 import {IObject} from '~/types/common';
 
 const Tab = createBottomTabNavigator();
+
 const BottomTabs = () => {
-  const dispatch = useDispatch();
   const {i18n} = useTranslation();
   const theme: IObject<any> = useTheme();
 
@@ -26,7 +24,7 @@ const BottomTabs = () => {
 
   const tabbarColor = tabsSetting.configs;
 
-  const {activeColor, inactiveColor, tabBarBackground} = tabbarColor;
+  const {tabBarBackground} = tabbarColor;
 
   const {tabsNavigator} = tabsSetting;
 
@@ -40,15 +38,8 @@ const BottomTabs = () => {
       sceneContainerStyle={{
         backgroundColor: theme.colors.bgColor,
       }}
-      tabBarOptions={{
-        activeTintColor: activeColor,
-        inactiveTintColor: inactiveColor,
-        keyboardHidesTabBar: Platform.OS === 'android' ? true : false,
-        style: {
-          backgroundColor: tabBarBackground,
-          paddingBottom: theme.spacing.padding.base * 2,
-          height: theme.spacing.padding.big * 2 - 8,
-        },
+      screenOptions={{
+        tabBarStyle: {position: 'absolute'},
       }}>
       {tabsNavigator.map((tab: IObject<any>, _i: number) => {
         const TabBarIcon = tabbarIcons[tab.option.tabBarIcon];
@@ -60,12 +51,6 @@ const BottomTabs = () => {
             key={'tabs' + tab.screen}
             name={tab.screen}
             component={listScreens[tab.screen]}
-            listeners={{
-              tabPress: (_) => {
-                (theme.darkMode || tab.screen === bottomTabs.home) &&
-                  dispatch(tempActions.setActiveTab(tab.screen));
-              },
-            }}
             options={{
               tabBarIcon: ({focused, color}) => {
                 return (

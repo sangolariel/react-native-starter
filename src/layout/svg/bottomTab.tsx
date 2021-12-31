@@ -100,7 +100,7 @@ export const BibleReadingTab: React.FC<SvgType> = ({
   );
 };
 
-export const MoreTab: React.FC<SvgType> = ({
+export const FeedIcon: React.FC<SvgType> = ({
   width = 16,
   height = 24,
   color = '#200E32',
