@@ -1,27 +1,25 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
 
-export interface Props {}
+/*Store state Redux Saga */
+import {Provider} from 'react-redux';
+import {PersistGate} from 'redux-persist/integration/react';
+
+import storeInit from './src/store';
+const {store, persistor} = storeInit();
+
+/*Bootstrap setup */
+import Bootstrap from './src/bootstrap';
+
+type Props = {};
 
 const App: React.FC<Props> = () => {
   return (
-    <View style={styles.container}>
-      <Text>Hello</Text>
-    </View>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <Bootstrap />
+      </PersistGate>
+    </Provider>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  greeting: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    margin: 16,
-  },
-});
 
 export default App;

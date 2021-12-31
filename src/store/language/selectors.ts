@@ -9,7 +9,7 @@ export const languageSelector = createSelector(
   (data) => data.get('language') || Actions.DEFAULT_LANGUAGE_CODE,
 );
 
-// Select active language
+// Select defaults language
 export const defaultLanguageSelector = createSelector(
   languageCommon,
   (data) => data.get('defaultLanguage') || Actions.DEFAULT_LANGUAGE_CODE,
