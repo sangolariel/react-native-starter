@@ -20,6 +20,7 @@ import FlashMessage from 'react-native-flash-message';
 
 /* Theme */
 import {
+  DarkTheme,
   DefaultTheme,
   Provider as PaperProvider,
   Provider as ThemeProvider,
@@ -105,10 +106,17 @@ export default () => {
   }, []);
 
   //Set config theme
-  let themeConfig: any = {
-    ...DefaultTheme,
-    colors: {...DefaultTheme.colors, ...colors.dark.colors},
-  };
+  let themeConfig: any =
+    theme === 'light'
+      ? {
+          ...DefaultTheme,
+          colors: {...DefaultTheme.colors, ...colors.light.colors},
+        }
+      : {
+          ...DarkTheme,
+          colors: {...DarkTheme.colors, ...colors.dark.colors},
+        };
+
   themeConfig.fontFamily = stateCurrent.loaded ? fonts : DefaultTheme.fonts;
   themeConfig.spacing = {...spacing};
   themeConfig.dimension = {...dimension};

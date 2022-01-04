@@ -1,6 +1,6 @@
 // Color system
 export const white = '#ffffff';
-export const grey1 = '#828f88';
+export const grey1 = '#f4f4f4';
 export const grey2 = '#e9ecef';
 export const grey3 = '#dee2e6';
 export const grey4 = '#adb5bd';
@@ -8,15 +8,14 @@ export const grey5 = '#999999';
 export const grey6 = '#777777';
 export const grey7 = '#383838';
 export const grey8 = '#1e1e1e';
-export const grey9 = '#EEDDEF';
+export const grey9 = '#2C2C2C';
 export const black = '#1E1F28';
 
 export const red = '#e60023';
 export const orange = '#F2711C';
-export const yellow = '#FFB612';
+export const yellow = '#FBBD08';
 export const olive = '#B5CC18';
 export const green = '#51d96c';
-export const green2 = '#174427';
 export const teal = '#00B5AD';
 export const blue = '#2185D0';
 export const violet = '#6435C9';
@@ -30,17 +29,17 @@ export default {
       accent: '#03dac6',
       native: '#2A2C36',
       backdrop: 'rgba(0, 0, 0, 0.5)',
+      background: '#2A2C36',
       disabled: 'rgba(255, 255, 255, 0.38)',
       error: '#CF6679',
       notification: '#ff80ab',
-      onSurface: '#174427',
+      onBackground: '#FFFFFF',
+      onSurface: '#FFFFFF',
       placeholder: 'rgba(255, 255, 255, 0.54)',
-      primary: 'rgba(255,182,18,1)',
-      surface: '#303e30',
-      text: '#FFFFFF',
-      textGrey: 'rgba(196, 196, 196, 1)',
-      bgColor: '#0E301A',
-      darkGreen1: '#172317',
+      primary: '#EF3651',
+      surface: '#1E1F28',
+      text: '#F6F6F6',
+      bgColor: black,
       bgColorSecondary: grey7,
       warning: yellow,
       red,
@@ -48,7 +47,6 @@ export default {
       yellow,
       olive,
       green,
-      green2,
       blue,
       teal,
       violet,
@@ -99,7 +97,6 @@ export default {
         backgroundColor: '#1e1f28',
         headerTintColor: '#ffffff',
       },
-      bgInputColor: '#6D7971',
     },
   },
   light: {
@@ -126,7 +123,6 @@ export default {
       yellow,
       olive,
       green,
-      green2,
       blue,
       teal,
       violet,
@@ -178,7 +174,6 @@ export default {
         backgroundColor: '#ffffff',
         headerTintColor: '#000000',
       },
-      bgInputColor: '#6D7971',
     },
   },
 };
