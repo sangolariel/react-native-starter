@@ -21,11 +21,7 @@ const BottomTabs = () => {
   const lang: string = i18n.language;
   const backBehavior = 'initialRoute';
 
-  const {initialRouteName} = tabsSetting.configs;
-
-  const tabbarColor = tabsSetting.configs;
-
-  const {tabBarBackground} = tabbarColor;
+  const {initialRouteName, headerShown} = tabsSetting.configs;
 
   const {tabsNavigator} = tabsSetting;
 
@@ -40,7 +36,7 @@ const BottomTabs = () => {
         backgroundColor: theme.colors.bgColor,
       }}
       screenOptions={{
-        tabBarStyle: {position: 'absolute'},
+        headerShown,
       }}>
       {tabsNavigator.map((tab: IObject<any>, _i: number) => {
         const TabBarIcon = tabbarIcons[tab.option.tabBarIcon];

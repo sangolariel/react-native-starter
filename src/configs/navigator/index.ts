@@ -69,6 +69,7 @@ export const tabsSetting = {
     tabBarBackground: 'white',
     activeColor: '#509B3D',
     inactiveColor: '#200E32',
+    headerShown: false,
   },
   tabsNavigator: [
     {
