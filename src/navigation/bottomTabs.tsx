@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import {useTheme} from 'react-native-paper';
 import {useTranslation} from 'react-i18next';
@@ -53,14 +54,7 @@ const BottomTabs = () => {
             component={listTabs[tab.screen]}
             options={{
               tabBarIcon: ({focused, color}) => {
-                return (
-                  <TabBarIcon
-                    dotColor={focused ? color : tabBarBackground}
-                    width={20}
-                    height={24}
-                    color={color}
-                  />
-                );
+                return <TabBarIcon width={20} height={24} color={color} />;
               },
               title: tab.name[lang],
             }}
