@@ -1,1 +1,1 @@
-export {default as Feed} from '~/layout/screens/feed';
+export {default as MainStack} from '~/navigation/mainStack';

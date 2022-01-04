@@ -44,7 +44,7 @@ export const navigationSetting = {
     cardStyle: {backgroundColor: '#fff'},
   },
   configs: {
-    initialRouteName: rootSwitch.appLoading,
+    initialRouteName: rootSwitch.mainStack,
   },
   stacks: [
     {
@@ -54,30 +54,6 @@ export const navigationSetting = {
       },
       router: rootSwitch.mainStack,
       screen: rootSwitch.mainStack,
-      options: {
-        headerShown: false,
-        animationEnabled: true,
-      },
-    },
-    {
-      title: {
-        vi: '',
-        en: '',
-      },
-      router: rootSwitch.authStack,
-      screen: rootSwitch.authStack,
-      options: {
-        headerShown: false,
-        animationEnabled: true,
-      },
-    },
-    {
-      title: {
-        vi: '',
-        en: '',
-      },
-      router: rootSwitch.appLoading,
-      screen: rootSwitch.appLoading,
       options: {
         headerShown: false,
         animationEnabled: true,

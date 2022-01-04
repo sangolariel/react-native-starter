@@ -3,7 +3,7 @@ import {useTheme} from 'react-native-paper';
 import {useTranslation} from 'react-i18next';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
-import * as screens from '~/navigation/screens';
+import * as tabs from '~/navigation/tabs';
 
 import {tabsSetting} from '~/configs/navigator';
 
@@ -28,7 +28,7 @@ const BottomTabs = () => {
 
   const {tabsNavigator} = tabsSetting;
 
-  const listScreens: IObject<any> = screens;
+  const listTabs: IObject<any> = tabs;
   const tabbarIcons: IObject<any> = TabsIcon;
 
   return (
@@ -43,14 +43,14 @@ const BottomTabs = () => {
       }}>
       {tabsNavigator.map((tab: IObject<any>, _i: number) => {
         const TabBarIcon = tabbarIcons[tab.option.tabBarIcon];
-        if (!Object.keys(screens).includes(tab.screen)) {
+        if (!Object.keys(listTabs).includes(tab.screen)) {
           return null;
         }
         return (
           <Tab.Screen
             key={'tabs' + tab.screen}
             name={tab.screen}
-            component={listScreens[tab.screen]}
+            component={listTabs[tab.screen]}
             options={{
               tabBarIcon: ({focused, color}) => {
                 return (
