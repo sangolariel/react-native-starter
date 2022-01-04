@@ -17,8 +17,9 @@ export const authStack = {
 
 export const bottomTabs = {
   feed: 'Feed',
-  notif: 'Notifications',
-  messages: 'Messages',
+  notif: 'Notification',
+  messenger: 'Messenger',
+  profile: 'Profile',
 };
 
 export const navigationSetting = {
@@ -104,12 +105,26 @@ export const tabsSetting = {
         en: '',
       },
       name: {
-        vi: 'Messages',
-        en: 'Messages',
+        vi: 'Messenger',
+        en: 'Messenger',
       },
-      screen: bottomTabs.messages,
+      screen: bottomTabs.messenger,
       option: {
         tabBarIcon: 'MessIcon',
+      },
+    },
+    {
+      title: {
+        vi: '',
+        en: '',
+      },
+      name: {
+        vi: 'Profile',
+        en: 'Profile',
+      },
+      screen: bottomTabs.profile,
+      option: {
+        tabBarIcon: 'ProfileIcon',
       },
     },
   ],
