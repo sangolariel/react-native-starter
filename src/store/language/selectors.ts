@@ -6,17 +6,17 @@ export const languageCommon = (state: any) => state.language;
 // Select active language
 export const languageSelector = createSelector(
   languageCommon,
-  (data) => data.get('language') || Actions.DEFAULT_LANGUAGE_CODE,
+  (data) => data?.language || Actions.DEFAULT_LANGUAGE_CODE,
 );
 
 // Select defaults language
 export const defaultLanguageSelector = createSelector(
   languageCommon,
-  (data) => data.get('defaultLanguage') || Actions.DEFAULT_LANGUAGE_CODE,
+  (data) => data?.defaultLanguage || Actions.DEFAULT_LANGUAGE_CODE,
 );
 
 // Select list languages
 export const listLanguageSelector = createSelector(
   languageCommon,
-  (data) => data.get('languages') || {},
+  (data) => data?.languages || {},
 );
