@@ -15,8 +15,7 @@ import {PreferencesContext} from '~/contexts/preferencesContext';
 
 export default function ProfileContent() {
   const paperTheme = useTheme();
-  const {rtl, theme, toggleRTL, toggleTheme} =
-    React.useContext(PreferencesContext);
+  const {theme, toggleTheme} = React.useContext(PreferencesContext);
 
   return (
     <View
@@ -43,14 +42,6 @@ export default function ProfileContent() {
             <Text>Dark Theme</Text>
             <View pointerEvents="none">
               <Switch value={theme === 'dark'} />
-            </View>
-          </View>
-        </TouchableRipple>
-        <TouchableRipple onPress={toggleRTL}>
-          <View style={styles.preference}>
-            <Text>RTL</Text>
-            <View pointerEvents="none">
-              <Switch value={rtl === 'right'} />
             </View>
           </View>
         </TouchableRipple>
