@@ -56,7 +56,6 @@ const StackNavigator = () => {
                   stack.options && stack.options.headerShown
                     ? stack.options.headerShown
                     : false,
-
                 headerStyle: {
                   backgroundColor: theme.colors.background,
                 },
