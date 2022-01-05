@@ -1,6 +1,6 @@
 export type StackNavigatorParamlist = {
   FeedList: undefined;
-  Details: {
+  DetailedTwitt: {
     id: number;
     name: string;
     handle: string;

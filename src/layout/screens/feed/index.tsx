@@ -28,7 +28,7 @@ const Feed = (props: Props) => {
     ...twittProps,
     onPress: () =>
       props.navigation &&
-      props.navigation.push('Details', {
+      props.navigation.push('DetailedTwitt', {
         ...twittProps,
       }),
   }));

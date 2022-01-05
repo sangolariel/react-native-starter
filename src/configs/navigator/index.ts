@@ -6,6 +6,7 @@ export const rootSwitch = {
 
 export const mainStack = {
   bottomTabs: 'BottomTabs',
+  detailedTwitt: 'DetailedTwitt',
 };
 
 export const authStack = {
@@ -57,6 +58,18 @@ export const navigationSetting = {
       screen: rootSwitch.mainStack,
       options: {
         headerShown: false,
+        animationEnabled: true,
+      },
+    },
+    {
+      title: {
+        vi: 'Detailed Twitt',
+        en: 'Detailed Twitt',
+      },
+      router: mainStack.detailedTwitt,
+      screen: mainStack.detailedTwitt,
+      options: {
+        headerShown: true,
         animationEnabled: true,
       },
     },
