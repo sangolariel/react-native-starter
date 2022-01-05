@@ -104,12 +104,12 @@ export const notificationTweets: Array<NotificationTwittProps> = [
       {
         name: 'Evan Bacon 🥓',
         image:
-          'https://pbs.twimg.com/profile_images/1274435026482937858/JZmznbJO_400x400.jpg',
+          'https://haymora.com/upload/files/cong_nghe_thong_tin/2019/futurify/logo-cong-ty-futurify.jpg',
       },
       {
         name: 'Leandro Favre',
         image:
-          'https://pbs.twimg.com/profile_images/1265688225076690945/JpshyTTJ_400x400.png',
+          'https://haymora.com/upload/files/cong_nghe_thong_tin/2019/futurify/logo-cong-ty-futurify.jpg',
       },
     ],
   },
@@ -134,7 +134,7 @@ export const notificationTweets: Array<NotificationTwittProps> = [
       {
         name: 'Nader Dabit',
         image:
-          'https://pbs.twimg.com/profile_images/1268352530423205889/V6Nz7mIt_400x400.jpg',
+          'https://haymora.com/upload/files/cong_nghe_thong_tin/2019/futurify/logo-cong-ty-futurify.jpg',
       },
     ],
   },
@@ -147,12 +147,12 @@ export const notificationTweets: Array<NotificationTwittProps> = [
       {
         name: 'Evan Bacon 🥓',
         image:
-          'https://pbs.twimg.com/profile_images/1274435026482937858/JZmznbJO_400x400.jpg',
+          'https://haymora.com/upload/files/cong_nghe_thong_tin/2019/futurify/logo-cong-ty-futurify.jpg',
       },
       {
         name: 'Leandro Favre',
         image:
-          'https://pbs.twimg.com/profile_images/1265688225076690945/JpshyTTJ_400x400.png',
+          'https://haymora.com/upload/files/cong_nghe_thong_tin/2019/futurify/logo-cong-ty-futurify.jpg',
       },
     ],
   },
@@ -177,7 +177,7 @@ export const notificationTweets: Array<NotificationTwittProps> = [
       {
         name: 'Nader Dabit',
         image:
-          'https://pbs.twimg.com/profile_images/1268352530423205889/V6Nz7mIt_400x400.jpg',
+          'https://haymora.com/upload/files/cong_nghe_thong_tin/2019/futurify/logo-cong-ty-futurify.jpg',
       },
     ],
   },
