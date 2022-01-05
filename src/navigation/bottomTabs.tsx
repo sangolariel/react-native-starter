@@ -37,6 +37,13 @@ const BottomTabs = () => {
       }}
       screenOptions={{
         headerShown,
+        tabBarStyle: {
+          position: 'absolute',
+          backgroundColor: theme.colors.background,
+        },
+        headerStyle: {
+          backgroundColor: theme.colors.background,
+        },
       }}>
       {tabsNavigator.map((tab: IObject<any>, _i: number) => {
         const TabBarIcon = tabbarIcons[tab.option.tabBarIcon];

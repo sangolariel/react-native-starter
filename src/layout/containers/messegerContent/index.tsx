@@ -9,7 +9,7 @@ type Props = {
 const Message = () => {
   const theme = useTheme();
 
-  const backgroundColor = theme.colors.surface;
+  const backgroundColor = theme.colors.background;
 
   return (
     <ScrollView

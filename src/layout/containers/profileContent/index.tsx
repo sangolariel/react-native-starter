@@ -23,7 +23,7 @@ export default function ProfileContent() {
       style={[
         styles.drawerContent,
         {
-          backgroundColor: paperTheme.colors.surface,
+          backgroundColor: paperTheme.colors.background,
         },
       ]}>
       <View style={styles.userInfoSection}>
