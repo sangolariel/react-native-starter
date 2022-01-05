@@ -31,6 +31,7 @@
     "react-i18next": "^11.15.2",
     "react-native": "0.66.4",
     "react-native-appearance": "^0.3.4",
+    "react-native-config": "^1.4.5",
     "react-native-flash-message": "^0.2.0",
     "react-native-pager-view": "^5.4.9",
     "react-native-paper": "^4.11.1",
