@@ -26,7 +26,7 @@ export const brown = '#A5673F';
 export default {
   dark: {
     colors: {
-      accent: '#03dac6',
+      accent: '#1DA1F2',
       native: '#2A2C36',
       backdrop: 'rgba(0, 0, 0, 0.5)',
       background: '#2A2C36',
@@ -101,7 +101,7 @@ export default {
   },
   light: {
     colors: {
-      accent: '#03dac4',
+      accent: '#1DA1F2',
       native: '#E5E5E5',
       backdrop: 'rgba(0, 0, 0, 0.5)',
       background: '#f6f6f6',

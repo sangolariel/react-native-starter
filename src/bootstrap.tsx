@@ -52,7 +52,7 @@ export default () => {
   const [theme, switchTheme] = React.useState<'light' | 'dark'>(
     colorScheme === 'dark' ? 'dark' : 'light',
   );
-  const barStyle = 'light-content';
+  const barStyle = theme === 'dark' ? 'light-content' : 'dark-content';
   const [rtl] = React.useState<boolean>(I18nManager.isRTL);
 
   const toggleTheme = () => {
