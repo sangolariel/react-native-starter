@@ -1,27 +1,50 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {FlatList, View, StyleSheet} from 'react-native';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import {useTheme} from 'react-native-paper';
 
-type Props = {};
+import {Twitt} from '~/layout/containers/twitt';
+import {twitts} from '~/mockData';
+import {StackNavigatorParamlist} from '~/types/stackNavigator';
 
-const Feed: React.FC<Props> = () => {
-  return (
-    <View style={styles.container}>
-      <Text>Feed Screen</Text>
-    </View>
-  );
+type TwittProps = React.ComponentProps<typeof Twitt>;
+
+function renderItem({item}: {item: TwittProps}) {
+  return <Twitt {...item} />;
+}
+
+function keyExtractor(item: TwittProps) {
+  return item.id.toString();
+}
+
+type Props = {
+  navigation?: NativeStackNavigationProp<StackNavigatorParamlist>;
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  greeting: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    margin: 16,
-  },
-});
+const Feed = (props: Props) => {
+  const theme = useTheme();
+
+  const data = twitts.map((twittProps) => ({
+    ...twittProps,
+    onPress: () =>
+      props.navigation &&
+      props.navigation.push('Details', {
+        ...twittProps,
+      }),
+  }));
+
+  return (
+    <FlatList
+      contentContainerStyle={{backgroundColor: theme.colors.background}}
+      style={{backgroundColor: theme.colors.background}}
+      data={data}
+      renderItem={renderItem}
+      keyExtractor={keyExtractor}
+      ItemSeparatorComponent={() => (
+        <View style={{height: StyleSheet.hairlineWidth}} />
+      )}
+    />
+  );
+};
 
 export default Feed;
