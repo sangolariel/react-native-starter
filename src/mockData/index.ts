@@ -13,7 +13,7 @@ export const twitts: Omit<TwittProps, 'onPress'>[] = [
       '🔥 Automatically use "smart" directional curly quotes with the `quotes` CSS property! Even handles nested quotes with the <q> tag :o',
     image: 'https://pbs.twimg.com/media/EOUrCOcWAAA71rA?format=png&name=small',
     avatar:
-      'https://pbs.twimg.com/profile_images/1242807739681845248/HeUb7BAt_400x400.jpg',
+      'https://haymora.com/upload/files/cong_nghe_thong_tin/2019/futurify/logo-cong-ty-futurify.jpg',
     comments: 12,
     retweets: 36,
     hearts: 175,
@@ -27,7 +27,7 @@ export const twitts: Omit<TwittProps, 'onPress'>[] = [
       'Not sure if I should be proud or ashamed of this piece of art 😅\n\n#Typescript',
     image: 'https://pbs.twimg.com/media/EONH4KWX4AEV-JP?format=jpg&name=medium',
     avatar:
-      'https://pbs.twimg.com/profile_images/1203032057875771393/x0nVAZPL_400x400.jpg',
+      'https://haymora.com/upload/files/cong_nghe_thong_tin/2019/futurify/logo-cong-ty-futurify.jpg',
     comments: 64,
     retweets: 87,
     hearts: 400,
@@ -42,7 +42,7 @@ export const twitts: Omit<TwittProps, 'onPress'>[] = [
     image:
       'https://static.antyweb.pl/uploads/2014/09/IPod_classic_6G_80GB_packaging-2007-09-22-1420x670.jpg',
     avatar:
-      'https://pbs.twimg.com/profile_images/1274435026482937858/JZmznbJO_400x400.jpg',
+      'https://haymora.com/upload/files/cong_nghe_thong_tin/2019/futurify/logo-cong-ty-futurify.jpg',
     comments: 23,
     retweets: 21,
     hearts: 300,
@@ -56,7 +56,7 @@ export const twitts: Omit<TwittProps, 'onPress'>[] = [
       '🔥 Automatically use "smart" directional curly quotes with the `quotes` CSS property! Even handles nested quotes with the <q> tag :o',
     image: 'https://pbs.twimg.com/media/EOUrCOcWAAA71rA?format=png&name=small',
     avatar:
-      'https://pbs.twimg.com/profile_images/1242807739681845248/HeUb7BAt_400x400.jpg',
+      'https://haymora.com/upload/files/cong_nghe_thong_tin/2019/futurify/logo-cong-ty-futurify.jpg',
     comments: 12,
     retweets: 36,
     hearts: 175,
@@ -70,7 +70,7 @@ export const twitts: Omit<TwittProps, 'onPress'>[] = [
       'Not sure if I should be proud or ashamed of this piece of art 😅\n\n#Typescript',
     image: 'https://pbs.twimg.com/media/EONH4KWX4AEV-JP?format=jpg&name=medium',
     avatar:
-      'https://pbs.twimg.com/profile_images/1203032057875771393/x0nVAZPL_400x400.jpg',
+      'https://haymora.com/upload/files/cong_nghe_thong_tin/2019/futurify/logo-cong-ty-futurify.jpg',
     comments: 64,
     retweets: 87,
     hearts: 400,
@@ -85,7 +85,7 @@ export const twitts: Omit<TwittProps, 'onPress'>[] = [
     image:
       'https://static.antyweb.pl/uploads/2014/09/IPod_classic_6G_80GB_packaging-2007-09-22-1420x670.jpg',
     avatar:
-      'https://pbs.twimg.com/profile_images/1274435026482937858/JZmznbJO_400x400.jpg',
+      'https://haymora.com/upload/files/cong_nghe_thong_tin/2019/futurify/logo-cong-ty-futurify.jpg',
     comments: 23,
     retweets: 21,
     hearts: 300,
