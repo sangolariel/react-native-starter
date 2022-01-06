@@ -4,6 +4,8 @@ import {Dimensions} from 'react-native';
 import {useTheme} from 'react-native-paper';
 import {TabView, SceneMap, TabBar} from 'react-native-tab-view';
 
+import {useBaseHook} from '~/hooks';
+
 import overlay from '~/utils/overlay';
 import Feed from '~/layout/screens/feed';
 import {AllNotifications} from '~/layout/containers/allNotifications';
@@ -15,10 +17,12 @@ const All = () => <AllNotifications />;
 const Mentions = () => <Feed />;
 
 const Notifications = () => {
+  const {t} = useBaseHook();
+
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
-    {key: 'all', title: 'All'},
-    {key: 'mentions', title: 'Mentions'},
+    {key: 'all', title: t('notification:all')},
+    {key: 'mentions', title: t('notification:mentions')},
   ]);
 
   const theme = useTheme();

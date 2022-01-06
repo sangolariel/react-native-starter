@@ -11,6 +11,8 @@ import {
   Drawer,
 } from 'react-native-paper';
 
+import {useBaseHook} from '~/hooks';
+
 import styles from './style';
 
 import {PreferencesContext} from '~/contexts/preferencesContext';
@@ -18,6 +20,8 @@ import {PreferencesContext} from '~/contexts/preferencesContext';
 export default function ProfileContent() {
   const paperTheme = useTheme();
   const {theme, toggleTheme} = React.useContext(PreferencesContext);
+
+  const {t} = useBaseHook();
 
   return (
     <View
@@ -41,7 +45,7 @@ export default function ProfileContent() {
       <Drawer.Section>
         <TouchableRipple onPress={toggleTheme}>
           <View style={styles.preference}>
-            <Text>Dark Theme</Text>
+            <Text>{t('profile:switch_dark_theme')}</Text>
             <View pointerEvents="none">
               <Switch value={theme === 'dark'} />
             </View>
