@@ -26,22 +26,4 @@ export default {
     fontFamily: fontFamilyBold,
     fontWeight: Platform.OS === 'android' ? null : fontWeightBold,
   },
-  secondaryFont: {
-    light: {
-      fontFamily: fontFamilyOpenSans,
-      fontWeight: fontWeightNormal,
-    },
-    medium: {
-      fontFamily: fontFamilyOpenSans,
-      fontWeight: fontWeightNormal,
-    },
-    regular: {
-      fontFamily: fontFamilyOpenSans,
-      fontWeight: fontWeightNormal,
-    },
-    bold: {
-      fontFamily: fontFamilyOpenSansBold,
-      fontWeight: Platform.OS === 'android' ? null : fontWeightBold,
-    },
-  },
 };

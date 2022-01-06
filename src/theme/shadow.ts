@@ -1,8 +1,8 @@
 export const elevation = {
-  small: 2,
-  base: 4,
-  medium: 6,
-  large: 9,
+  base: 2,
+  small: 4,
+  large: 6,
+  big: 9,
 };
 
 export default {

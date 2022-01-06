@@ -36,7 +36,7 @@ const BottomTabs = () => {
       initialRouteName={initialRouteName}
       backBehavior={backBehavior}
       sceneContainerStyle={{
-        backgroundColor: theme.colors.bgColor,
+        backgroundColor: theme.colors.background,
       }}
       screenOptions={{
         headerShown,

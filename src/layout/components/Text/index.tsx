@@ -32,7 +32,6 @@ export interface Props {
   errorStyle?: StyleProp<TextStyle>;
   colorSecondary?: boolean;
   colorThird?: boolean;
-  secondaryFont?: boolean;
   primary?: StyleProp<TextStyle>;
   secondary?: StyleProp<TextStyle>;
   third?: StyleProp<TextStyle>;
@@ -70,13 +69,12 @@ const TextElement: React.FC<Props> = (props) => {
     onPress,
     disabledDarkMode,
     reverseDarkMode,
-    secondaryFont,
     ...rest
   } = props;
   const theme: ThemeType = useTheme();
   const {fontFamily, dimension, colors} = theme;
-  const {sizes, lineHeights, letterSpacing} = dimension;
-  const fonts = secondaryFont ? fontFamily.secondaryFont : fontFamily;
+  const {sizes, lineHeights, letterSpacing} = dimension as any;
+  const fonts = fontFamily;
   const styles = styleText(
     theme,
     sizes,

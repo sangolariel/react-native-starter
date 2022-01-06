@@ -31,6 +31,8 @@ import {colors, fonts, spacing, dimension, shadow} from '~/theme';
 // /* Router @react-navigation v6 */
 import RootNavigator from '~/navigation';
 
+import {ThemeType} from '~/types/common';
+
 export default () => {
   /* Localization */
   const {i18n} = useTranslation();
@@ -106,7 +108,7 @@ export default () => {
   }, []);
 
   //Set config theme
-  let themeConfig: any =
+  let themeConfig: ThemeType =
     theme === 'light'
       ? {
           ...DefaultTheme,
