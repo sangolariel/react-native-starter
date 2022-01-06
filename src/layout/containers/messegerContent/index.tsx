@@ -1,7 +1,9 @@
 import React from 'react';
-import {ScrollView, StyleSheet} from 'react-native';
+import {ScrollView} from 'react-native';
 import {BottomTabNavigationProp} from '@react-navigation/bottom-tabs';
 import {Headline, Caption, useTheme, Button} from 'react-native-paper';
+
+import styles from './style';
 
 type Props = {
   navigation: BottomTabNavigationProp<{}>;
@@ -32,23 +34,5 @@ const Message = () => {
     </ScrollView>
   );
 };
-
-const styles = StyleSheet.create({
-  scrollViewContent: {
-    flex: 1,
-    paddingHorizontal: 30,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  centerText: {
-    textAlign: 'center',
-  },
-  button: {
-    marginTop: 20,
-  },
-  labelStyle: {
-    color: 'white',
-  },
-});
 
 export default Message;
