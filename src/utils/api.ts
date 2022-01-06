@@ -7,7 +7,7 @@ import axios from 'axios';
 /* You can log errors when call api in this file or send them to Slack App using "slack webhook" */
 
 const instance = axios.create({
-  baseURL: 'http://localhost:8080/api',
+  baseURL: 'http://baseURL',
   headers: {
     'Content-Type': 'application/json',
   },
