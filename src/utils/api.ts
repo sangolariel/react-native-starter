@@ -4,7 +4,7 @@ import axios from 'axios';
 
 /* https://www.bezkoder.com/react-refresh-token/ */
 
-/* You can log errors when call api in this file or send them to Slack App using "slack webhook" */
+/* You can log the response when call api in this file or send them to Slack App using "slack webhook" */
 
 const instance = axios.create({
   baseURL: 'http://baseURL',
