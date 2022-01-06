@@ -17,8 +17,10 @@ import styles from './style';
 
 import {PreferencesContext} from '~/contexts/preferencesContext';
 
+import {ThemeType} from '~/types/common';
+
 export default function ProfileContent() {
-  const paperTheme = useTheme();
+  const paperTheme: ThemeType = useTheme();
   const {theme, toggleTheme} = React.useContext(PreferencesContext);
 
   const {t} = useBaseHook();

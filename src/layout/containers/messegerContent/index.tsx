@@ -3,13 +3,15 @@ import {ScrollView} from 'react-native';
 import {BottomTabNavigationProp} from '@react-navigation/bottom-tabs';
 import {Headline, Caption, useTheme, Button} from 'react-native-paper';
 
+import {ThemeType} from '~/types/common';
+
 import styles from './style';
 
 type Props = {
   navigation: BottomTabNavigationProp<{}>;
 };
 const Message = () => {
-  const theme = useTheme();
+  const theme: ThemeType = useTheme();
 
   const backgroundColor = theme.colors.background;
 

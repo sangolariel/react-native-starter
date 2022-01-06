@@ -2,8 +2,8 @@
 import React from 'react';
 import {StyleSheet, Text, TextStyle, StyleProp} from 'react-native';
 import {useTheme} from 'react-native-paper';
-import {IObject} from '~/types/common';
 import {colors} from '~/theme';
+import {IObject, ThemeType} from '~/types/common';
 
 const configColors: IObject<any> = colors;
 
@@ -73,7 +73,7 @@ const TextElement: React.FC<Props> = (props) => {
     secondaryFont,
     ...rest
   } = props;
-  const theme: any = useTheme();
+  const theme: ThemeType = useTheme();
   const {fontFamily, dimension, colors} = theme;
   const {sizes, lineHeights, letterSpacing} = dimension;
   const fonts = secondaryFont ? fontFamily.secondaryFont : fontFamily;

@@ -15,12 +15,12 @@ import {navigationSetting} from '~/configs/navigator';
 import {navigationRef} from '~/utils/refNavigator';
 
 import {StackType} from '~/types/navigator';
-import {IObject} from '~/types/common';
+import {ThemeType, IObject} from '~/types/common';
 
 const Stack = createNativeStackNavigator();
 
 const StackNavigator = () => {
-  const theme = useTheme();
+  const theme: ThemeType = useTheme();
   const {i18n} = useTranslation();
 
   const lang: string = i18n.language;

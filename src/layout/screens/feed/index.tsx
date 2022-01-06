@@ -6,6 +6,7 @@ import {useTheme} from 'react-native-paper';
 import {Twitt} from '~/layout/containers/twitt';
 import {twitts} from '~/mockData';
 import {StackNavigatorParamlist} from '~/types/stackNavigator';
+import {ThemeType} from '~/types/common';
 
 type TwittProps = React.ComponentProps<typeof Twitt>;
 
@@ -22,7 +23,7 @@ type Props = {
 };
 
 const Feed = (props: Props) => {
-  const theme = useTheme();
+  const theme: ThemeType = useTheme();
 
   const data = twitts.map((twittProps) => ({
     ...twittProps,

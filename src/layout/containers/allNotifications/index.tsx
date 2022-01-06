@@ -5,6 +5,8 @@ import {useTheme} from 'react-native-paper';
 import {NotificationTwitt} from '~/layout/containers/twitt/notificationTwitt';
 import {notificationTweets} from '~/mockData';
 
+import {ThemeType} from '~/types/common';
+
 type NotificationTwittProps = React.ComponentProps<typeof NotificationTwitt>;
 
 function renderItem({item}: {item: NotificationTwittProps}) {
@@ -16,7 +18,7 @@ function keyExtractor(item: NotificationTwittProps) {
 }
 
 export const AllNotifications = () => {
-  const theme = useTheme();
+  const theme: ThemeType = useTheme();
 
   return (
     <FlatList

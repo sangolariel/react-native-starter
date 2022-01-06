@@ -10,6 +10,8 @@ import overlay from '~/utils/overlay';
 import Feed from '~/layout/screens/feed';
 import {AllNotifications} from '~/layout/containers/allNotifications';
 
+import {ThemeType} from '~/types/common';
+
 const initialLayout = {width: Dimensions.get('window').width};
 
 const All = () => <AllNotifications />;
@@ -25,7 +27,7 @@ const Notifications = () => {
     {key: 'mentions', title: t('notification:mentions')},
   ]);
 
-  const theme = useTheme();
+  const theme: ThemeType = useTheme();
 
   const renderScene = SceneMap({
     all: All,

@@ -2,6 +2,7 @@
 import React from 'react';
 import {useTheme} from 'react-native-paper';
 import {useTranslation} from 'react-i18next';
+import {SvgProps} from 'react-native-svg';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import * as tabs from '~/navigation/tabs';
@@ -10,13 +11,15 @@ import {tabsSetting} from '~/configs/navigator';
 
 import * as TabsIcon from '~/layout/svg/bottomTab';
 
-import {IObject} from '~/types/common';
+import {IObject, ThemeType} from '~/types/common';
+import {TabType} from '~/types/navigator';
 
 const Tab = createBottomTabNavigator();
 
 const BottomTabs = () => {
   const {i18n} = useTranslation();
-  const theme: IObject<any> = useTheme();
+
+  const theme: ThemeType = useTheme();
 
   const lang: string = i18n.language;
   const backBehavior = 'initialRoute';
@@ -45,8 +48,9 @@ const BottomTabs = () => {
           backgroundColor: theme.colors.background,
         },
       }}>
-      {tabsNavigator.map((tab: IObject<any>, _i: number) => {
-        const TabBarIcon = tabbarIcons[tab.option.tabBarIcon];
+      {tabsNavigator.map((tab: TabType, _i: number) => {
+        const TabBarIcon: React.ComponentClass<SvgProps> =
+          tabbarIcons[tab.option.tabBarIcon];
         if (!Object.keys(listTabs).includes(tab.screen)) {
           return null;
         }
@@ -59,7 +63,7 @@ const BottomTabs = () => {
               tabBarIcon: ({focused, color}) => {
                 return <TabBarIcon width={20} height={24} color={color} />;
               },
-              title: tab.name[lang],
+              title: (tab.name as IObject<any>)[lang],
             }}
           />
         );

@@ -9,8 +9,8 @@ import {
   useTheme,
 } from 'react-native-paper';
 import color from 'color';
-
 import styles from './style';
+import {ThemeType} from '~/types/common';
 
 type Props = {
   id: number;
@@ -26,7 +26,7 @@ type Props = {
 };
 
 export const DetailedTwitt = (props: Props) => {
-  const theme = useTheme();
+  const theme: ThemeType = useTheme();
 
   const contentColor = color(theme.colors.text).alpha(0.8).rgb().string();
 
