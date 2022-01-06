@@ -1,3 +1,9 @@
+## Version
+
+react-native: 0.66.4
+react-navigation: v6
+node: v16.13.1
+
 ## Run app
 
 #ios
