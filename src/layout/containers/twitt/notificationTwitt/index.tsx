@@ -1,8 +1,9 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import {View} from 'react-native';
 import {Surface, Text, Avatar, useTheme} from 'react-native-paper';
 import color from 'color';
+import styles from './style';
 
 type Props = {
   id: number;
@@ -42,25 +43,3 @@ export const NotificationTwitt = (props: Props) => {
     </Surface>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flexDirection: 'row',
-    paddingTop: 15,
-    paddingRight: 15,
-    paddingBottom: 15,
-  },
-  leftColumn: {
-    width: 100,
-    marginRight: 10,
-    alignItems: 'flex-end',
-  },
-  rightColumn: {
-    flex: 1,
-  },
-  topRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 10,
-  },
-});

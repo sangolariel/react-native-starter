@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, View, Image} from 'react-native';
+import {View, Image} from 'react-native';
 import {
   Surface,
   Title,
@@ -9,6 +9,8 @@ import {
   useTheme,
 } from 'react-native-paper';
 import color from 'color';
+
+import styles from './style';
 
 type Props = {
   id: number;
@@ -58,33 +60,3 @@ export const DetailedTwitt = (props: Props) => {
     </Surface>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 20,
-  },
-  avatar: {
-    marginRight: 20,
-  },
-  topRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  handle: {
-    marginRight: 3,
-    lineHeight: 12,
-  },
-  content: {
-    marginTop: 25,
-    fontSize: 20,
-    lineHeight: 30,
-  },
-  image: {
-    borderWidth: StyleSheet.hairlineWidth,
-    marginTop: 25,
-    borderRadius: 20,
-    width: '100%',
-    height: 280,
-  },
-});
