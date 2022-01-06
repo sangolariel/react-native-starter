@@ -29,3 +29,7 @@ node: v16.13.1
 - Make sure your styles clearly. Don't fixed style.
 - camelCase to name the styles and func ...
 - Make sure that code doesn't have warning and bug.
+
+# Warning
+
+At the time config this source code. There is a warning like that on Android ("new NativeEventEmitter() was called with a non-null argument without the required addListener method."). It is opening & seems no one fixed it. Pls flow this issue (https://github.com/react-native-netinfo/react-native-netinfo/issues/486) to fix it in the future. Thank you.
