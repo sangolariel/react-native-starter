@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-shadow */
-import React, {useEffect, useState, useCallback, useMemo} from 'react';
+import React, {useEffect, useCallback, useMemo} from 'react';
 import {I18nManager, StatusBar} from 'react-native';
 import {useTranslation} from 'react-i18next';
 
@@ -31,9 +31,6 @@ import {colors, fonts, spacing, dimension, shadow} from '~/theme';
 // /* Router @react-navigation v6 */
 import RootNavigator from '~/navigation';
 
-/* Untils */
-// import {setAuthorizationToken, setUserAgent} from '~/utils/api';
-
 export default () => {
   /* Localization */
   const {i18n} = useTranslation();
@@ -63,9 +60,12 @@ export default () => {
     I18nManager.forceRTL(!rtl);
   }, [rtl]);
 
-  const [stateCurrent, setState] = useState({isUpdate: false, loaded: false});
+  const [stateCurrent, setState] = React.useState({
+    isUpdate: false,
+    loaded: false,
+  });
 
-  const [isConnected, setConnected] = useState(true);
+  const [isConnected, setConnected] = React.useState<boolean>(true);
 
   const preferences = useMemo(
     () => ({
