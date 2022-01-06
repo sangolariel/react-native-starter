@@ -5,7 +5,7 @@ import {I18nManager, StatusBar} from 'react-native';
 import {useTranslation} from 'react-i18next';
 
 /* check Internet */
-import NetInfo from '@react-native-community/netinfo';
+import NetInfo, {NetInfoState} from '@react-native-community/netinfo';
 
 /* Context */
 import {PreferencesContext} from '~/contexts/preferencesContext';
@@ -97,7 +97,7 @@ export default () => {
   };
 
   /*Check internet*/
-  NetInfo.fetch().then((state: any) => {
+  NetInfo.fetch().then((state: NetInfoState | any) => {
     if (isConnected !== state.isConnected) {
       setConnected(state.isConnected);
     }
