@@ -6,7 +6,10 @@ import {useTheme} from 'react-native-paper';
 import {DefaultTheme, DarkTheme} from '@react-navigation/native';
 
 /* @react-navigation v6 */
-import {NavigationContainer} from '@react-navigation/native';
+import {
+  NavigationContainer,
+  NavigationContainerRef,
+} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 /*Import config navigation*/
@@ -34,7 +37,7 @@ const StackNavigator = () => {
   const navigationTheme = theme.dark ? DarkTheme : DefaultTheme;
 
   // const containerRef = React.useRef(null);
-  const ref: any = navigationRef;
+  const ref: NavigationContainerRef<any> | any = navigationRef;
 
   const listScreens: IObject<any> = screens;
 
