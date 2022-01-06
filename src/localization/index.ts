@@ -9,6 +9,8 @@ export const languages = {
 };
 
 i18n.use(initReactI18next).init({
+  compatibilityJSON: 'v3',
+
   fallbackLng: 'en',
   lng: 'en',
 
