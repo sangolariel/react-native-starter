@@ -28,9 +28,10 @@ import {
 import {useColorScheme} from 'react-native-appearance';
 import {colors, fonts, spacing, dimension, shadow} from '~/theme';
 
-// /* Router @react-navigation v6 */
+/* Router @react-navigation v6 */
 import RootNavigator from '~/navigation';
 
+/* Types */
 import {ThemeType} from '~/types/common';
 
 export default () => {
